@@ -81,16 +81,54 @@ a:hover{
 .website-imeg{
     gap: 20px;
 }
+/* Collaction Style */
+.card-title{
+    text-align: center;
+    font-size: 3rem;
+}
+.card-popular{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.card{
+    width: 330px;
+    height: 450px;
+    padding: 10px;
+    background: white;
+    box-shadow: 3px 3px 5px gray;
+    border-radius: 5px;
+}
+.products-img{
+    width: 100%;
+}
+.products-name{
+    font-size: 2rem;
+    margin: 0;
+
+}
+.products-prize{
+    font-size: 1.5rem;
+    margin: 0;
+}
+.products-des{
+
+}
 /* Responsive Style */
 @media screen and (max-width:576px) {
-    .navber{
+    .navber,
+    .card-popular{
     display: grid;
     grid-template-columns: 1fr;
     margin: auto;
+    justify-content: center;
 }
     .nav-header-title, a{
         text-align: center;
     }
+    .card-title{
+    text-align: center;
+    font-size: 2rem;}
     .nav-container{
         margin: auto;
         justify-content: center;
@@ -118,6 +156,9 @@ a:hover{
     .nav-header-title, a{
         text-align: center;
         
+    }
+    .card-popular{
+        grid-template-columns: repeat(2, 1fr);
     }
      .nav-container{
         margin: auto;
