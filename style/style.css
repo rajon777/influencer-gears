@@ -114,6 +114,25 @@ a:hover{
 .products-des{
 
 }
+.products-place{
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    margin: 100px 50px;
+}
+.featured-title{
+
+}
+.featured-des{
+
+}
+.footer{
+    background-color: rgb(1, 1, 22);
+    justify-content: center;
+    text-align: center;
+    padding: 100px;
+    color: wheat;
+}
 /* Responsive Style */
 @media screen and (max-width:576px) {
     .navber,
@@ -132,6 +151,12 @@ a:hover{
     .nav-container{
         margin: auto;
         justify-content: center;
+    }
+    .products-place{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 100px;
+        margin: 50px;
     }
     .banner{
         display: flex;
